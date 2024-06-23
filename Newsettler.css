@@ -10,17 +10,21 @@
 
 body {
   background-color: hsl(235, 18%, 26%);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  justify-items: center;
+  align-items: center;
   background-color: white;
   border-radius: 20px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 h1 {
   color: hsl(234, 29%, 20%);
@@ -32,23 +36,22 @@ p {
   font-size: 16px;
 }
 
-li {
+ul {
   list-style-type: none;
   font-size: 16px;
+  padding: 0;
 }
 
-content {
-  margin-top: 100px;
+.content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
   justify-items: center;
+  align-self: center;
+  padding: 30px;
 }
 
 button {
-  margin-bottom: 100px;
   background-color: hsl(235, 18%, 26%);
   color: hsl(0, 0%, 100%);
   padding: 20px;
@@ -70,8 +73,11 @@ img {
 .large-image {
   align-self: center;
   justify-self: center;
+  padding: 30px;
 }
-
+h2 {
+  font-size: 16px;
+}
 input {
   border: solid hsl(235, 18%, 26%);
   padding: 20px 5px;
